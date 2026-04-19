@@ -8,7 +8,10 @@ interface Props {
   description?: string;
 }
 
-const { title = "Your New Business", description = "I’m a hospitality consulting company and I help independent boutique luxury and wellness hotels with their strategy and operations to be more profitable. My ideal clients are in Arizona, Costa Rica, Europe" } = Astro.props;
+const {
+  title = "Velato — Boutique Hotel Consulting | Luxury & Wellness Hotel Strategy",
+  description = "Velato helps independent luxury and wellness hotel owners in Arizona, Costa Rica, and Europe grow revenue, improve operations, and reclaim their margins — without losing what makes them special."
+} = Astro.props;
 ---
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -18,14 +21,17 @@ const { title = "Your New Business", description = "I’m a hospitality consulti
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
     <title>{title}</title>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Your New Business",
-      "description": "I’m a hospitality consulting company and I help independent boutique luxury and wellness hotels with their strategy and operations to be more profitable. My ideal clients are in Arizona, Costa Rica, Europe",
-      "url": "https://luxury-hospitality-strategies.onrender.com"
+      "@type": "ProfessionalService",
+      "name": "Velato",
+      "description": "Boutique hotel consulting for independent luxury and wellness hotel owners in Arizona, Costa Rica, and Europe.",
+      "url": "https://luxury-hospitality-strategies.onrender.com",
+      "areaServed": ["Arizona, US", "Costa Rica", "Western Europe"],
+      "serviceType": ["Hotel Revenue Management", "Boutique Hotel Consulting", "Wellness Hotel Strategy"]
     }
     </script>
   </head>

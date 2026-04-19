@@ -1,11 +1,29 @@
 ---
 ---
-<header class="sticky top-0 z-50 border-b border-surface-200 bg-surface-50/80 backdrop-blur-lg">
+<header class="sticky top-0 z-50 border-b border-surface-200/60 bg-surface-50/90 backdrop-blur-lg">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-    <a href="/" class="text-lg font-bold tracking-tight text-surface-900 font-display">Your New Business</a>
-    <div class="flex items-center gap-6">
-      <a href="/blog" class="text-sm font-medium text-surface-800/60 hover:text-surface-900 transition-colors">Blog</a>
-      <a href="#cta" class="text-sm font-semibold bg-brand-500 text-white px-4 py-2 rounded-lg hover:bg-brand-600 transition-colors">Get Started</a>
+    <!-- Logo mark + wordmark -->
+    <a href="/" class="flex items-center gap-2.5 group">
+      <!-- Leaf/mark SVG -->
+      <svg class="w-7 h-7 flex-shrink-0" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 3C14 3 5 9 5 16C5 20.418 9.134 24 14 24C18.866 24 23 20.418 23 16C23 9 14 3 14 3Z" style="fill: oklch(0.42 0.10 155);" opacity="0.9"/>
+        <path d="M14 8C14 8 8.5 13 8.5 17.5C8.5 20.037 11 22 14 22" style="fill: oklch(0.65 0.14 68);" opacity="0.7"/>
+      </svg>
+      <span class="text-lg font-bold tracking-tight text-surface-900 font-display">Velato</span>
+    </a>
+
+    <!-- Nav links -->
+    <div class="hidden md:flex items-center gap-7">
+      <a href="#services" class="text-sm font-medium text-surface-800/60 hover:text-surface-900 transition-colors duration-150 font-body">Services</a>
+      <a href="#how-it-works" class="text-sm font-medium text-surface-800/60 hover:text-surface-900 transition-colors duration-150 font-body">How It Works</a>
+      <a href="#contact" class="text-sm font-semibold text-white px-5 py-2 rounded-lg transition-colors duration-150 font-body" style="background-color: oklch(0.42 0.10 155);" onmouseover="this.style.backgroundColor='oklch(0.35 0.09 155)'" onmouseout="this.style.backgroundColor='oklch(0.42 0.10 155)'">
+        Book a call
+      </a>
     </div>
+
+    <!-- Mobile CTA -->
+    <a href="#contact" class="md:hidden text-sm font-semibold text-white px-4 py-2 rounded-lg transition-colors duration-150 font-body" style="background-color: oklch(0.42 0.10 155);">
+      Book a call
+    </a>
   </nav>
 </header>

@@ -1,11 +1,52 @@
 ---
 const year = new Date().getFullYear();
 ---
-<footer class="border-t border-surface-200 py-10 mt-auto">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-      <p class="text-sm font-semibold text-surface-900 font-display">Your New Business</p>
-      <p class="text-sm text-surface-800/50">&copy; {year} Your New Business. All rights reserved.</p>
+<footer class="border-t border-surface-200" style="background-color: oklch(0.95 0.015 80);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- Brand column -->
+      <div>
+        <a href="/" class="flex items-center gap-2.5 mb-4">
+          <svg class="w-6 h-6 flex-shrink-0" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 3C14 3 5 9 5 16C5 20.418 9.134 24 14 24C18.866 24 23 20.418 23 16C23 9 14 3 14 3Z" style="fill: oklch(0.42 0.10 155);" opacity="0.9"/>
+            <path d="M14 8C14 8 8.5 13 8.5 17.5C8.5 20.037 11 22 14 22" style="fill: oklch(0.65 0.14 68);" opacity="0.7"/>
+          </svg>
+          <span class="text-base font-bold tracking-tight text-surface-900 font-display">Velato</span>
+        </a>
+        <p class="text-sm text-surface-800/55 leading-relaxed font-body font-light max-w-xs">
+          Boutique hotel consulting for independent luxury and wellness property owners in Arizona, Costa Rica, and Europe.
+        </p>
+      </div>
+
+      <!-- Services column -->
+      <div>
+        <h4 class="text-xs font-semibold tracking-widest uppercase text-surface-800/50 mb-4 font-body">Services</h4>
+        <ul class="space-y-2.5">
+          <li><a href="#services" class="text-sm text-surface-800/65 hover:text-surface-900 transition-colors duration-150 font-body">Revenue Strategy</a></li>
+          <li><a href="#services" class="text-sm text-surface-800/65 hover:text-surface-900 transition-colors duration-150 font-body">Operations &amp; Margin</a></li>
+          <li><a href="#services" class="text-sm text-surface-800/65 hover:text-surface-900 transition-colors duration-150 font-body">Wellness Programming</a></li>
+          <li><a href="#services" class="text-sm text-surface-800/65 hover:text-surface-900 transition-colors duration-150 font-body">Owner-Level Strategy</a></li>
+        </ul>
+      </div>
+
+      <!-- Markets + Contact column -->
+      <div>
+        <h4 class="text-xs font-semibold tracking-widest uppercase text-surface-800/50 mb-4 font-body">Markets Served</h4>
+        <ul class="space-y-2.5 mb-6">
+          <li class="text-sm text-surface-800/65 font-body">Sedona &amp; Scottsdale, Arizona</li>
+          <li class="text-sm text-surface-800/65 font-body">Costa Rica</li>
+          <li class="text-sm text-surface-800/65 font-body">Western Europe</li>
+        </ul>
+        <a href="mailto:hello@velato.co" class="text-sm font-semibold font-body" style="color: oklch(0.42 0.10 155);">hello@velato.co</a>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="mt-10 pt-6 border-t border-surface-200 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+      <p class="text-xs text-surface-800/40 font-body">&copy; {year} Velato. All rights reserved.</p>
+      <p class="text-xs text-surface-800/40 font-body">Independent boutique hotel consulting — always on the owner's side.</p>
     </div>
   </div>
 </footer>
